@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Tab Writer",
+  "version": "1.0",
+  "description": "Opens a persistant notepad in a blank tab",
+  "browser_action": {
+    "icons": ["icon.png"],
+    "default_icon": "icon.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "content_scripts": [ {
+    "js": [ "jquery-3.3.1.min.js", "main.js" ],
+    "matches": [ "http://*/*", "https://*/*"]
+    }]
+  }

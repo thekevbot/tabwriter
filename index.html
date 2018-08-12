@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tab Writer</title>
+  <style>
+  html, body{
+    width:100%;
+    min-height:100%;
+    margin:0;
+    font-family:'Monaco', 'Consolas', monospace;
+  }
+  #editor{
+    width:100%;
+    min-height:100vh;
+    outline:none;
+    padding:8px 16px;
+    box-sizing: border-box;
+    color:white;
+    font-size:1em;
+    line-height:1.4em;
+    background: blue;
+  }
+  .command{
+    font-size:1em;
+    font-family:'Monaco', 'Consolas', monospace;
+    width:100%;
+    display:block;
+    border:none;
+    outline:none;
+    color:blue;
+    background-color:white;
+  }
+  </style>
+</head>
+<body>
+  <div id="editor" contenteditable="true">
+    <p>
+      =============================<br>
+      === WELCOME TO TAB WRITER ===<br>
+      =============================
+    </p>
+    <p>Just start typing.</p>
+    <p>
+      === Keyboard Shortcuts ===<br>
+      ==========================
+    </p>
+    1. [CMD + SHIFT + '] - Enter Command mode<br>
+    2. [CMD + SHIFT + RETURN] - Insert marker<br>
+    3. [CMD + SHIFT + <] - Previous marker<br>
+    4. [CMD + SHIFT + >] - Next marker
+  </p>
+  <p>
+    === Useful Commands ===<br>
+    =======================
+  </p>
+  <p>
+    1. HELP - Insert help text<br>
+    2. GOTO {DDMMYY} - Jump to marker
+  </p>
+</div>
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
